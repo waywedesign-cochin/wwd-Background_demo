@@ -7,12 +7,15 @@
 }
 
 body {
-  background: #f4f6f8;
-  color: #1f2937;
+  /* background: #f4f6f8; */
+  /* color: #1f2937; */
     height: 100%;
   margin: 0;
   padding: 0;
   overflow: auto!important;     
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
 }
 .app-root {
   min-height: 100vh;

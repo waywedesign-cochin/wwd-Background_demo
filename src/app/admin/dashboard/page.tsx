@@ -1,8 +1,10 @@
 import ProtectedRoute from "@/app/components/ProtectedRoute";
 import { cases } from "../../data/dummyData";
 import "../../css//admin-dashboard.css";
+import StatCard from "@/app/components/Staticcard";
 
 export default function AdminDashboard() {
+
   return (
     <ProtectedRoute role="admin">
       <div className="admin-dashboard">
@@ -71,12 +73,4 @@ export default function AdminDashboard() {
   );
 }
 
-/* Small reusable stat card */
-function StatCard({ label, value }: { label: string; value: number }) {
-  return (
-    <div className="stat-card">
-      <span>{label}</span>
-      <strong>{value}</strong>
-    </div>
-  );
-}
+
